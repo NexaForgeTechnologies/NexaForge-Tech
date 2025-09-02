@@ -3,7 +3,7 @@ export default function FocusArea() {
     return (
         <>
             <section className="bg-[url('/focus-area2.png')] bg-cover bg-center bg-no-repeat
-            relative min-h-100 min-w-100 py-10 md:py-20 w-screen ml-[calc(50%-50vw)] md:px-18 lg:px-20">
+            relative min-h-100 py-10 md:py-20 w-screen ml-[calc(50%-50vw)] md:px-18 lg:px-20">
 
                 <div className="flex flex-col justify-between items-center h-100 lg:h-120 relative">
 

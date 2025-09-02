@@ -63,4 +63,35 @@ body {
     animation-duration: 3s;
   }
 }
+.slick-slide > div {
+  margin: 0 10px;
+}
 
+/* Remove margin from inside the dot div */
+.slick-dots li div {
+  width: 30px;
+  height: 5px;
+  border-radius: 8%;
+  background: #d9d9d9;
+  transition: all ease-in 0.3s;
+}
+
+/* Active dot style */
+.slick-dots li.slick-active div {
+  background: linear-gradient(to right, #5BDCE4, #034FAF);
+  width: 40px;
+  border-radius: 5px;
+  z-index: 100;
+}
+
+/* Make sure the <ul> inside .slick-dots is flex for gap to work */
+.slick-dots ul {
+  display: flex !important;
+  justify-content: center;
+  align-items: end;
+  gap: 17px;  /* adjust spacing between dots */
+  padding: 0;
+  /* background-color: red; */
+  list-style: none;
+  height: 50px;
+}
