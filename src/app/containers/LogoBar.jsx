@@ -44,18 +44,47 @@ export default function LogoBar() {
                             className="object-contain"
                         />
                     </div>
-                    
+
 
                     <div className="relative w-20 h-20 flex-none">
                         <Image
                             src="/carbon-credit.png"
-                            alt="Ring for Lives"
+                            alt="Carbon Credit"
                             fill
                             className="object-contain"
                         />
                     </div>
+
+
+                    <div className="relative w-30 h-20 flex-none">
+                        <Image
+                            src="/xecplug.png"
+                            alt="XecPlug"
+                            fill
+                            className="object-contain"
+                        />
+                        <span className="text-[7px] absolute bottom-[15%]  text-center">Functional to Enterprise Leadership</span>
                 </div>
-            </marquee>
-        </section>
+
+                <div className="relative w-30 h-20 flex-none">
+                    <Image
+                        src="/achieve-meter.png"
+                        alt="Carbon Credit"
+                        fill
+                        className="object-contain"
+                    />
+                </div>
+
+                <div className="relative w-28 h-20 flex-none">
+                    <Image
+                        src="/ptx.png"
+                        alt="PTX"
+                        fill
+                        className="object-contain"
+                    />
+                </div>
+            </div>
+        </marquee>
+        </section >
     );
 }

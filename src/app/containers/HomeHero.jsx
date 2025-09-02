@@ -2,7 +2,7 @@ import BtnOne from "../components/BtnOne";
 
 export default function HomeHero() {
   return (
-    <section className="relative bg-[url('/MainHero2.svg')] bg-top-left bg-contain md:bg-center bg-no-repeat py-10 lg:py-20 w-screen ml-[calc(50%-50vw)]">
+    <section className="relative bg-[url('/MainHero2.svg')] bg-top-left bg-contain md:bg-center bg-no-repeat py-10 lg:py-20 w-screen ml-[calc(50%-50vw)] bg-white mt-25">
       <div className="absolute inset-0 w-full h-[400px] z-10 pointer-events-none">
         <div className="absolute left-[15%] top-0 md:left-[15%] md:top-[45px]">
           <img src="/react-icon.svg" alt="React Icon" className="w-10 md:w-16 animate-bounce animate-delay-1 animate-slow" />
@@ -35,7 +35,7 @@ export default function HomeHero() {
           At <b>NexaForge</b> Technologies, we turn ideas into powerful, scalable software solutions custom-built to help startups and enterprises grow through innovative digital experiences.
         </p>
 
-        <p className="text-base md:text-lg font-semibold text-[#4D4D4D]">
+        <p className="text-base md:text-lg font-semibold text-[#4D4D4D] text-center">
           Empowering industries through code.
         </p>
 

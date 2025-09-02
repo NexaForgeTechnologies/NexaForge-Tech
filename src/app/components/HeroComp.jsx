@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HeroComp({icon='home', home='home', page, title, title2, para,sideImage}) {
     return (
         <>
-            <section className="w-screen ml-[calc(50%-50vw)]">
+            <section className="w-screen ml-[calc(50%-50vw)] mt-15">
 
                 <div className="relative px-5 sm:px-10 md:px-18 lg:px-20">
                     {/* Bg-Image */}
@@ -39,7 +39,7 @@ export default function HeroComp({icon='home', home='home', page, title, title2,
 
                         {/* Image Part */}
 
-                        <section className="relative min-h-[300px] lg:min-h-[400px] select-none m-5">
+                        <section className="relative min-h-[300px] lg:min-h-[400px] select-none m-5 p-10">
                             <Image
                                 src={sideImage}
                                 fill

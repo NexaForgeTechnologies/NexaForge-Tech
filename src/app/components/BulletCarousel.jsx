@@ -55,34 +55,6 @@ export default function BulletCarousel({
     customPaging: i => <div />,
   };
 
-
-    // const data = [
-    //     {
-    //         img: "/Slider-img1.png",
-    //         name: "Sarah Khan",
-    //         title: "Product Manager, FinEdge Solutions",
-    //         description: `NexaForge brought our vision to life with a seamless app that exceeded expectations. Their team was responsive, creative, and fast!`
-    //     },
-    //     {
-    //         img: "/Slider-img1.png",
-    //         name: "Sarah Khan",
-    //         title: "Product Manager, FinEdge Solutions",
-    //         description: `NexaForge brought our vision to life with a seamless app that exceeded expectations. Their team was responsive, creative, and fast!`
-    //     },
-    //     {
-    //         img: "/Slider-img1.png",
-    //         name: "Sarah Khan",
-    //         title: "Product Manager, FinEdge Solutions",
-    //         description: `NexaForge brought our vision to life with a seamless app that exceeded expectations. Their team was responsive, creative, and fast!`
-    //     },
-    //     {
-    //         img: "/Slider-img1.png",
-    //         name: "Sarah Khan",
-    //         title: "Product Manager, FinEdge Solutions",
-    //         description: `NexaForge brought our vision to life with a seamless app that exceeded expectations. Their team was responsive, creative, and fast!`
-    //     },
-    // ]
-
     return (
         <>
             <section className="py-20 flex flex-col gap-y-5">

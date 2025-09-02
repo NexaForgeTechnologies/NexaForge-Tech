@@ -21,7 +21,7 @@ export default function Header() {
   }, [isOpen]);
 
     return (
-        <nav className="px-5 sm:px-10 md:px-18 lg:px-18 py-4">
+        <nav className="px-5 sm:px-10 md:px-18 lg:px-18 py-4 bg-white fixed top-0 w-full z-50">
             {/* Desktop Nav */}
             <div className="hidden lg:flex items-center justify-between gap-x-3">
                 <img src="logo.png" alt="Nexaforge-logo" className="w-30 md:w-40" />

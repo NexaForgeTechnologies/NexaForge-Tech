@@ -28,7 +28,7 @@ export default function ClientsTab() {
                 <section className="flex flex-col justify-center items-center">
                     {tab === "tab1" && (
                         <section className="flex flex-col justify-center items-center gap-y-10">
-                            <h1 className="text-3xl md:text-4xl font-medium text-center max-w-180">
+                            <h1 className="text-base sm:text-2xl md:text-4xl font-medium text-center max-w-180">
                                 <span className="font-semibold"> Partners</span> we’ve helped go to market
                                 faster using our <span className="font-semibold mr-2">MVP Development</span>
                                 <span>Framework.</span>
@@ -39,7 +39,7 @@ export default function ClientsTab() {
 
                     {tab === "tab2" && (
                         <section className="flex flex-col justify-center items-center gap-y-10">
-                            <h1 className="text-3xl md:text-4xl font-medium text-center max-w-180">
+                            <h1 className="text-base sm:text-2xl md:text-4xl font-medium text-center max-w-180">
                                 <span className="font-semibold"> Partners</span> we’ve helped digitally transform using our <span className="font-semibold mr-2">Innovation Delivery Framework.</span>
                             </h1>
                         </section>
@@ -48,10 +48,8 @@ export default function ClientsTab() {
 
                 </section>
 
-
-                <marquee className="select-none" scrollamount="5">
-                    <div className="flex gap-x-10">
-                        <div className="relative w-40 h-20 flex-none">
+                <section className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-7">
+                        <div className="relative w-36 h-20 sm:w-40 sm:h-24 m-auto">
                             <Image
                                 src="/procurement-logo.png"
                                 alt="Procurement"
@@ -61,7 +59,7 @@ export default function ClientsTab() {
                         </div>
 
 
-                        <div className="relative w-40 h-20 flex-none">
+                        <div className="relative w-36 h-20 sm:w-40 sm:h-24 m-auto">
                             <Image
                                 src="/al-aqsa-logo.svg"
                                 alt="Al Aqsa"
@@ -71,7 +69,7 @@ export default function ClientsTab() {
                         </div>
 
 
-                        <div className="relative w-40 h-20 flex-none">
+                        <div className="relative w-36 h-20 sm:w-40 sm:h-24 m-auto">
                             <Image
                                 src="/shirakatdari.png"
                                 alt="Shirakatdari"
@@ -81,7 +79,7 @@ export default function ClientsTab() {
                         </div>
 
 
-                        <div className="relative w-20 h-20 flex-none">
+                        <div className="relative w-36 h-15 sm:w-40 m-auto">
                             <Image
                                 src="/ringforlives-logo.jpg"
                                 alt="Ring for Lives"
@@ -89,18 +87,9 @@ export default function ClientsTab() {
                                 className="object-contain"
                             />
                         </div>
-
-
-                        <div className="relative w-20 h-20 flex-none">
-                            <Image
-                                src="/carbon-credit.png"
-                                alt="Ring for Lives"
-                                fill
-                                className="object-contain"
-                            />
-                        </div>
                         
-                        <div className="relative w-20 h-20 flex-none">
+
+                        <div className="relative w-36 h-20 sm:w-40 sm:h-24 m-auto">
                             <Image
                                 src="/achieve-meter.png"
                                 alt="Achieve Meter"
@@ -108,8 +97,9 @@ export default function ClientsTab() {
                                 className="object-contain"
                             />
                         </div>
-                        
-                        <div className="relative w-20 h-20 flex-none">
+
+
+                        <div className="relative w-30">
                             <Image
                                 src="/ptx.png"
                                 alt="PTX"
@@ -117,8 +107,8 @@ export default function ClientsTab() {
                                 className="object-contain"
                             />
                         </div>
-                        
-                        <div className="relative w-20 h-20 flex-none">
+
+                        <div className="relative w-36 h-20 sm:w-40 sm:h-24 m-auto">
                             <Image
                                 src="/achievergroup.png"
                                 alt="The Achiever Group"
@@ -126,18 +116,27 @@ export default function ClientsTab() {
                                 className="object-contain"
                             />
                         </div>
-                        
-                        <div className="relative w-20 h-20 flex-none">
+
+                        <div className="relative w-36 h-20 sm:w-40 sm:h-24 m-auto">
                             <Image
                                 src="/xecplug.png"
                                 alt="XecPlug"
                                 fill
                                 className="object-contain"
                             />
+                            <span className="text-[7px] absolute bottom-[15%] left-2 sm:left-4 md:left-5 text-center">Functional to Enterprise Leadership</span>
                         </div>
-                    </div>
-                </marquee>
-
+                        
+                        
+                        <div className="relative w-36 h-20 sm:w-40 sm:h-24 m-auto">
+                            <Image
+                                src="/carbon-credit.png"
+                                alt="Ring for Lives"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                </section>
             </section>
         </>
     );
