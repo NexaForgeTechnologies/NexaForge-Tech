@@ -94,7 +94,7 @@ export default function Header() {
 
                 <span
                     onClick={() => setIsOpen(!isOpen)}
-                    className="text-3xl cursor-pointer select-none transition"
+                    className="text-3xl text-black cursor-pointer select-none transition"
                 >
                     ☰
                 </span>

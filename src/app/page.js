@@ -13,7 +13,7 @@ export default function Home() {
       <LogoBar />
       <SoftwareProvider />
       <WhatWeOfferSwiper />
-      <PreviewSlider />
+      {/* <PreviewSlider /> */}
       <FocusArea />
       <BulletCarousel
         data={[
@@ -44,11 +44,11 @@ export default function Home() {
         ]}
       />
 
-      <BuildSomethingComp 
-      TitleBold={"Let’s Build"}
-      TitlenotBold={"Something Great"}
-      para={"From consultation to deployment, we help you every step of the way."} 
-      BtnName={"Contact Us"}
+      <BuildSomethingComp
+        TitleBold={"Let’s Build"}
+        TitlenotBold={"Something Great"}
+        para={"From consultation to deployment, we help you every step of the way."}
+        BtnName={"Contact Us"}
       />
     </>
   );

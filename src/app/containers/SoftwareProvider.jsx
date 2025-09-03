@@ -7,7 +7,7 @@ export default function SoftwareProvider() {
                     <img src="/Group-525.svg" alt="" />
                 </div>
 
-                <div className="py-5 lg:p-7 mt-10 lg:mt-0 flex flex-col gap-y-7">
+                <div className="py-5 lg:p-7 mt-10 lg:mt-0 flex flex-col gap-y-7 text-black">
                     <span className="block w-30 md:w-40 h-1 bg-gradient-to-r from-[#5BDCE4] to-[#034FAF]"></span>
                     <h1 className="text-3xl md:text-4xl lg:text-5xl"> <span className="font-bold"> More </span> than just a
                         <span className="font-bold"> software provider </span>

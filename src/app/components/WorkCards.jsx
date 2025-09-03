@@ -25,7 +25,7 @@ export default function WorkCards({ img, title, icon }) {
 
       {/* Text & Button */}
       <div className="p-5 flex flex-col gap-3 mt-7 justify-end h-full">
-        <h1 className="font-semibold text-xl md:text-2xl">{title}</h1>
+        <h1 className="font-semibold text-xl md:text-2xl text-black">{title}</h1>
 
         <div className="flex items-end">
         <BtnOne name="Get Started" bgColor="bg-transparent" />

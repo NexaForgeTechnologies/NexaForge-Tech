@@ -2,11 +2,13 @@ import Benefits from "../components/Benefits";
 export default function EmployeeBenefits() {
     return (
         <>
-            <section className="flex flex-col items-center gap-y-7 lg:gap-y-10 mt-10 md:mt-0">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl text-center"> Employee
-                    <span className="font-bold"> Benefits </span></h1>
+            <section className="flex flex-col items-center gap-y-7 md:gap-y-10 lg:gap-y-15 mt-10 md:mt-0">
+                <div className="flex flex-col justify-center items-center gap-y-3 md:gap-y-5">
+                    <h1 className="text-3xl md:text-4xl lg:text-5xl text-center text-black"> Employee
+                        <span className="font-bold"> Benefits </span></h1>
 
-                <p className="font-medium text-base md:text-2xl text-[#1B1B1B] text-center max-w-200 mb-3">  We prioritize the personal well-being of our employees and strive to foster a healthy work-life balance. </p>
+                    <p className="font-medium text-base md:text-xl text-[#1B1B1B] text-center max-w-200">  We prioritize the personal well-being of our employees and strive to foster a healthy work-life balance. </p>
+                </div>
 
                 <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-20 overflow-hidden">
                     <Benefits

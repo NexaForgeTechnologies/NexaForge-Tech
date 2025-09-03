@@ -26,8 +26,8 @@ export default function VerticalCont({ img, icon, title, para }) {
 
       {/* Content area */}
       <div className="flex flex-col gap-3 px-5 pb-5 pt-10 justify-end flex-1">
-        <h1 className="font-semibold text-xl md:text-2xl">{title}</h1>
-        <p className="text-sm md:text-base">{para}</p>
+        <h1 className="font-semibold text-xl md:text-2xl text-[#1B1B1B]">{title}</h1>
+        <p className="text-sm md:text-base text-[#808080]">{para}</p>
         <div className="mt-auto">
           <BtnOne name="Get Started" bgColor="bg-transparent" />
         </div>

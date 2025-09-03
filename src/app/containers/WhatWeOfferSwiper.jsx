@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRef, useState, useEffect } from "react";
+import Image from "next/image";
 import WeOfferDiv1 from "../components/WeOfferDiv1";
 
 export default function WhatWeOfferSwiper() {
@@ -19,7 +20,7 @@ export default function WhatWeOfferSwiper() {
             } else if (width < 1024) {
                 setSlidesToShow(2);
             } else {
-                setSlidesToShow(3);
+                setSlidesToShow(3.5);
             }
         };
 
@@ -34,8 +35,8 @@ export default function WhatWeOfferSwiper() {
         infinite: true,
         speed: 500,
         slidesToShow: slidesToShow,
-        slidesToScroll: 1,
-        autoplay: true,
+        slidesToScroll: 2,
+        autoplay: false,
         autoplaySpeed: 3000,
         arrows: false,
 
@@ -44,48 +45,59 @@ export default function WhatWeOfferSwiper() {
 
     const data = [
         {
-            img: "/Slider-img1.png",
-            title: "Product Manager, FinEdge Solutions",
-            description: `NexaForge brought our vision to life with a seamless app that exceeded expectations. Their team was responsive, creative, and fast!`
+            img: "/offer-slide1.png",
+            alt: "img1",
+            title: "EXPERIENCE DESIGN",
+            description: `Creating User-Centered Experiences to Impress and Inspire​`
         },
         {
-            img: "/Slider-img1.png",
-            title: "Product Manager, FinEdge Solutions",
-            description: `NexaForge brought our vision to life with a seamless app that exceeded expectations. Their team was responsive, creative, and fast!`
+            img: "/offer-slide2.png",
+            alt: "img2",
+            title: "DELIVERING INNOVATION",
+            description: `Inspire, Develop, Implement`
         },
         {
-            img: "/Slider-img1.png",
-            title: "Product Manager, FinEdge Solutions",
-            description: `NexaForge brought our vision to life with a seamless app that exceeded expectations. Their team was responsive, creative, and fast!`
+            img: "/offer-slide3.png",
+            alt: "img3",
+            title: "TEAM AUGMENTATION",
+            description: `Strategic Choice Over Outsourcing`
         },
         {
-            img: "/Slider-img1.png",
-            title: "Product Manager, FinEdge Solutions",
-            description: `NexaForge brought our vision to life with a seamless app that exceeded expectations. Their team was responsive, creative, and fast!`
-        }
+            img: "/offer-slide4.png",
+            alt: "img4",
+            title: "BRINGING INNOVATION TO LIFE",
+            description: `From Conceptualization to Market Triumph`
+        },
     ]
 
     return (
         <>
-            <section className="py-20 flex flex-col gap-y-5">
-                <div className="flex flex-col md:flex-row justify-between w-full">
+            <section className="py-20 flex flex-col gap-y-5 bg-[url('/whatweoffer.png')] bg-cover bg-center
+            w-screen ml-[calc(50%-50vw)] px-5 sm:px-10 md:px-18 lg:px-20 bg-no-repeat text-white">
+
+                <div className="grid grid-col-1 lg:grid-cols-3 gap-y-3 md:gap-y-5 lg:gap-y-7 gap-x-10">
                     <div>
-                        <span className="block w-30 md:w-40 h-1 bg-gradient-to-r from-[#5BDCE4] to-[#034FAF] mb-10"></span>
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold max-w-160">
-                            <span className="mr-1"> What People</span>
-                            <span className="font-light">
-                                Think About Our Products (under development)
+                        <span className="block w-30 md:w-40 h-1 bg-gradient-to-r from-[#5BDCE4] to-[#034FAF]   md:mb-10 mb-5"></span>
+                        <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold max-w-160 text-white">
+                            <span className="mr-1.5 font-light"> What</span>
+                            <span className="">
+                                we offer
                             </span>
                         </h1>
+
+                    </div>
+
+                    <div className="flex items-end">
+                        <p className="text-base md:text-xl max-w-120 text-[#FFFFFF]">Our solutions are engineered for performance, reliability, and growth.</p>
                     </div>
 
                     {/* Arrows for carousel */}
                     {/* Custom Arrows */}
-                    <div className="flex gap-x-3 mt-6 justify-end items-center">
+                    <div className="flex gap-x-3 mt-6 justify-center lg:justify-end items-center">
                         <div
                             onClick={() => sliderRef.current.slickPrev()}
-                            className="material-symbols-outlined text-black border border-[#E2E2E2] 
-                            active:border-[#034FAF] active:bg-[#034FAF] active:text-white cursor-pointer 
+                            className="material-symbols-outlined text-black 
+                            active:border-[#034FAF] active:bg-[#034FAF] bg-[#FFFFFF80] active:text-white cursor-pointer 
                             p-2 sm:p-3 md:p-4 text-base sm:text-lg md:text-xl rounded select-none"
                         >
                             arrow_back
@@ -100,18 +112,29 @@ export default function WhatWeOfferSwiper() {
                     </div>
                 </div>
 
-                <div className="mt-10">
+                <div className="mt-5 md:mt-10">
                     <Slider ref={sliderRef} {...settings}>
-                    {data.map((d) => (
-                        <div className="min-h-60 bg-blue-600">
-                            <div className="relative z-20 flex flex-col gap-y-3">
-                                <h2 className="font-bold text-2xl">{d.title}</h2>
-                                <p className="text-sm">
-                                    {d.description}
-                                </p>
+                        {data.map((d) => (
+                            <div className="min-h-90 md:min-h-100 lg:min-h-100 relative rounded overflow-hidden">
+
+                                {/* Content */}
+                                <div className="relative z-20 flex flex-col gap-y-2 bg-gradient-to-b from-[#034FAF] via-[#034FAF] to-[#034FAF]/0 p-5 pb-10 text-white">
+                                    <h2 className="font-bold text-lg md:text-xl">{d.title}</h2>
+                                    <p className="text-sm">
+                                        {d.description}
+                                    </p>
+                                </div>
+
+                                {/* Image */}
+                                <Image
+                                    src={d.img}
+                                    alt={d.alt}
+                                    fill
+                                    priority
+                                    className="object-cover object-bottom z-0"
+                                />
                             </div>
-                        </div>
-                    ))}
+                        ))}
                     </Slider>
                 </div>
             </section>

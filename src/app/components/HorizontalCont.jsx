@@ -27,8 +27,8 @@ export default function HorizontalCont({ img, icon, title, para }) {
           />
         </div>
 
-        <h1 className="font-semibold text-xl md:text-2xl">{title}</h1>
-        <p className="text-sm md:text-base">
+        <h1 className="font-semibold text-xl md:text-2xl text-black">{title}</h1>
+        <p className="text-sm md:text-base text-[#808080]">
           {para}
         </p>
         <div className="mt-auto">

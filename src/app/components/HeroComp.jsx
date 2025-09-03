@@ -29,7 +29,7 @@ export default function HeroComp({icon='home', home='home', page, title, title2,
 
                             <span className="block w-30 h-1 bg-gradient-to-r from-[#5BDCE4] to-[#034FAF]"></span>
 
-                            <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl">{title}</h1>
+                            <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl text-[#1B1B1B]">{title}</h1>
                             <h3 className="font-medium text-2xl text-[#1B1B1B]">
                                 {title2}
                             </h3>
