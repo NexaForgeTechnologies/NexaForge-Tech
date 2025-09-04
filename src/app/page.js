@@ -1,11 +1,11 @@
-import HomeHero from "./containers/HomeHero";
-import SoftwareProvider from "./containers/SoftwareProvider"
-import FocusArea from "./containers/FocusArea";
-import PreviewSlider from "./containers/PreviewSlider";
-import LogoBar from "./containers/LogoBar";
-import BulletCarousel from "./components/BulletCarousel";
-import WhatWeOfferSwiper from "./containers/WhatWeOfferSwiper";
-import BuildSomethingComp from "./components/BuildSomethingComp";
+import HomeHero from "../containers/HomeHero";
+import SoftwareProvider from "../containers/SoftwareProvider"
+import FocusArea from "../containers/FocusArea";
+import PreviewSlider from "../containers/PreviewSlider";
+import LogoBar from "../containers/LogoBar";
+import BulletCarousel from "../components/BulletCarousel";
+import WhatWeOfferSwiper from "../containers/WhatWeOfferSwiper";
+import BuildSomethingComp from "../components/BuildSomethingComp";
 export default function Home() {
   return (
     <>

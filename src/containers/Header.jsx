@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import BtnOne from "./BtnOne";
+import BtnOne from "../components/BtnOne";
 import Link from "next/link";
 
 export default function Header() {
