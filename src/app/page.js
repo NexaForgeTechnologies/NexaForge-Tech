@@ -1,11 +1,11 @@
 import HomeHero from "../containers/HomeHero";
 import SoftwareProvider from "../containers/SoftwareProvider"
 import FocusArea from "../containers/FocusArea";
-import PreviewSlider from "../containers/PreviewSlider";
 import LogoBar from "../containers/LogoBar";
 import BulletCarousel from "../components/BulletCarousel";
 import WhatWeOfferSwiper from "../containers/WhatWeOfferSwiper";
 import BuildSomethingComp from "../components/BuildSomethingComp";
+import PreviewSliderCont from "@/containers/PreviewSliderCont";
 export default function Home() {
   return (
     <>
@@ -13,7 +13,7 @@ export default function Home() {
       <LogoBar />
       <SoftwareProvider />
       <WhatWeOfferSwiper />
-      {/* <PreviewSlider /> */}
+      {/* <PreviewSliderCont /> */}
       <FocusArea />
       <BulletCarousel
         data={[

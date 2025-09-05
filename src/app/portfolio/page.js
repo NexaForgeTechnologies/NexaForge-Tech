@@ -1,3 +1,4 @@
+import PortfolioTabsCont from "@/containers/PortfolioTabsCont";
 import HeroComp from "../../components/HeroComp";
 export default function Portfolio() {
     return (
@@ -11,6 +12,7 @@ export default function Portfolio() {
             para={'Empowering visionary enterprises in their digital transformation endeavors '}
             sideImage={'Group-529.svg'}
             />
+            <PortfolioTabsCont />
         </>
     );
 }

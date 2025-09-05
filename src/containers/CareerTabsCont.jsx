@@ -24,10 +24,10 @@ export default function CareerTabsCont() {
                             { id: "tab6", label: "Honesty" },
                             { id: "tab7", label: "Impact" },
                         ].map(({ id, label }) => (
-                            <li key={id} className="text-2xl text-white text-center select-none">
+                            <li key={id} className="text-2xl text-white text-center select-none flex justify-center items-center">
                                 <button
                                     onClick={() => setTab(id)}
-                                    className={`cursor-pointer w-full py-2 px-2 rounded h-full text-sm md:text-base hover:bg-[#034FAF] hover:text-white ${tab === id
+                                    className={`cursor-pointer w-full py-2 px-2 rounded h-full text-sm hover:bg-[#034FAF] hover:text-white ${tab === id
                                         ? "text-white bg-[#034FAF] text-base"
                                         : " text-black"
                                         }`}

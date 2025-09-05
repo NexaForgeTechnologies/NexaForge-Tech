@@ -16,7 +16,7 @@ export default function HeroComp({icon='home', home='home', page, title, title2,
                     />
                     <section className="grid grid-cols-1 md:grid-cols-2 pt-15 md:pt-20 pb-15 lg:pb-30">
                         {/* Content Part */}
-                        <section className="relative flex flex-col items-start md:justify-center gap-y-5 mb-5 ">
+                        <section className="relative flex flex-col items-start md:justify-center gap-y-3 md:gap-y-5 mb-5 ">
                             <div className="flex items-center gap-x-2 mb-15">
                                 <span className="material-symbols-outlined text-[#808080] opacity-60 select-none cursor-pointer">
                                     {icon}
@@ -30,7 +30,7 @@ export default function HeroComp({icon='home', home='home', page, title, title2,
                             <span className="block w-30 h-1 bg-gradient-to-r from-[#5BDCE4] to-[#034FAF]"></span>
 
                             <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl text-[#1B1B1B]">{title}</h1>
-                            <h3 className="font-medium text-2xl text-[#1B1B1B]">
+                            <h3 className="font-medium  text-base md:text-lg text-[#1B1B1B]">
                                 {title2}
                             </h3>
                             <p className="text-[#808080] pr-10">{para} </p>

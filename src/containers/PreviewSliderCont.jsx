@@ -4,8 +4,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useRef, useState, useEffect } from "react";
 
-export default function BulletCarousel({
+export default function PreviewSliderCont({
     data = [
+        {
+            img: "/Slider-img1.png",
+            name: "Sarah Khan",
+            title: "Product Manager, FinEdge Solutions",
+            description: `NexaForge brought our vision to life with a seamless app that exceeded expectations. Their team was responsive, creative, and fast!`
+        },
+        {
+            img: "/Slider-img1.png",
+            name: "Sarah Khan",
+            title: "Product Manager, FinEdge Solutions",
+            description: `NexaForge brought our vision to life with a seamless app that exceeded expectations. Their team was responsive, creative, and fast!`
+        },
         {
             img: "/Slider-img1.png",
             name: "Sarah Khan",
@@ -48,12 +60,13 @@ export default function BulletCarousel({
         autoplaySpeed: 3000,
         arrows: false,
         appendDots: dots => (
-            <div className="mt-6">
-                <ul className="flex justify-center items-end gap-[17px] list-none h-[50px] p-0 m-0">
+            <div className="mt-8 ">
+                <ul className="flex justify-center items-end gap-[17px] bg-red-400/50 list-none h-[50px] p-0 m-0">
                     {dots}
                 </ul>
             </div>
         ),
+
 
         // Dot appearance
         customPaging: i => (
@@ -86,9 +99,9 @@ export default function BulletCarousel({
                     <div className="text-black">
                         <span className="block w-30 md:w-40 h-1 bg-gradient-to-r from-[#5BDCE4] to-[#034FAF] mb-10"></span>
                         <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold max-w-160">
-                            <span className="mr-1"> What People</span>
+                            <span className="mr-1"> Our Work</span>
                             <span className="font-light">
-                                Think About Our Products
+                                Speaks Volumes
                             </span>
                         </h1>
                     </div>
@@ -117,35 +130,9 @@ export default function BulletCarousel({
                 <div className="mt-10">
                     <Slider ref={sliderRef} {...settings}>
                         {data.map((d) => (
-                            <div className="bg-[#F8FBFF] border border-[#034FAF4D] rounded-lg p-6 flex flex-col justify-between max-w-md mb-5">
-                                {/* Top content */}
-                                <div className="flex flex-col gap-y-4">
-                                    {/* Profile */}
-                                    <div className="flex items-center gap-x-4">
-                                        <img
-                                            src={d.img}
-                                            alt={d.name}
-                                            className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover"
-                                        />
-                                        <div>
-                                            <p className="text-lg font-semibold text-black">{d.name}</p>
-                                            <p className="text-sm text-black">{d.title}</p>
-                                        </div>
-                                    </div>
-
-                                    {/* Description */}
-                                    <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-                                        {d.description}
-                                    </p>
-                                </div>
-
-                                {/* Rating pinned at bottom */}
-                                <span className="flex gap-x-2 mt-4">
-                                    <span className="text-[#808080]">4.9/5.0</span>
-                                    <span>⭐⭐⭐⭐⭐</span>
-                                </span>
+                            <div>
+                                <img src={d.img} alt="slider" className="w-full h-full object-cover rounded border border-[#034FAF]" />
                             </div>
-
                         ))}
 
                     </Slider>
