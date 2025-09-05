@@ -16,7 +16,7 @@ function Footer() {
                     <div className="flex items-center gap-x-5 mt-2">
                         
                         <Link href={"https://www.facebook.com/profile.php?id=61556582074660&mibextid=kFxxJD"}>
-                            <img src="/vector.png" alt="Facebook" width={25} /></Link>
+                            <img src="/Vector.png" alt="Facebook" width={25} /></Link>
                         
                         <Link href={"https://www.instagram.com/nexaforgetech?igsh=czJvMzA4bXNtbW9h"}>
                             <img src="/instagram.png" alt="Instagram" width={25} /></Link>
