@@ -1,6 +1,6 @@
-import BuildSomethingComp from "../components/BuildSomethingComp";
-import HeroComp from "../components/HeroComp";
-import OurSolutionCont from "../containers/OurSolutionCont";
+import BuildSomethingComp from "../../components/BuildSomethingComp";
+import HeroComp from "../../components/HeroComp";
+import OurSolutionCont from "../../containers/OurSolutionCont";
 export default function Solutions() {
     return (
         <>

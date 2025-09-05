@@ -1,6 +1,6 @@
-import BuildSomethingComp from "../components/BuildSomethingComp";
-import HeroComp from "../components/HeroComp";
-import ClientsTab from "../containers/ClientsTab";
+import BuildSomethingComp from "../../components/BuildSomethingComp";
+import HeroComp from "../../components/HeroComp";
+import ClientsTab from "../../containers/ClientsTab";
 
 export default function Clients() {
     return (

@@ -1,6 +1,6 @@
-import WorkCont from "../containers/WorkCont";
-import HeroComp from "../components/HeroComp";
-import BuildSomethingComp from "../components/BuildSomethingComp";
+import WorkCont from "../../containers/WorkCont";
+import HeroComp from "../../components/HeroComp";
+import BuildSomethingComp from "../../components/BuildSomethingComp";
 export default function Work() {
     return (
         <>

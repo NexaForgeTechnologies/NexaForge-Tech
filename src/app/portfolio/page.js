@@ -1,4 +1,4 @@
-import HeroComp from "../components/HeroComp";
+import HeroComp from "../../components/HeroComp";
 export default function Portfolio() {
     return (
         <>

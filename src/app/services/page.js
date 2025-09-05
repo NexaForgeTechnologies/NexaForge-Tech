@@ -1,6 +1,6 @@
-import HeroComp from "../components/HeroComp";
-import WeOfferCont from "../containers/WeOfferCont";
-import BuildSomethingComp from "../components/BuildSomethingComp";
+import HeroComp from "../../components/HeroComp";
+import WeOfferCont from "../../containers/WeOfferCont";
+import BuildSomethingComp from "../../components/BuildSomethingComp";
 export default function Services() {
     return (
         <>

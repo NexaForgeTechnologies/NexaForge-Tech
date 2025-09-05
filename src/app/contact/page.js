@@ -1,6 +1,6 @@
-import MapContact from "../containers/MapContact";
-import HeroComp from "../components/HeroComp";
-import Form from "../containers/Form";
+import MapContact from "../../containers/MapContact";
+import HeroComp from "../../components/HeroComp";
+import Form from "../../containers/Form";
 
 export default function Contact() {
     return (

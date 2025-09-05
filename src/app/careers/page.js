@@ -1,9 +1,9 @@
-import HeroComp from "../components/HeroComp";
-import EmployeeBenefits from "../containers/EmployeeBenefits";
-import BuildSomethingComp from "../components/BuildSomethingComp";
-import CareerTabsCont from "../containers/CareerTabsCont";
-import BulletCarousel from "../components/BulletCarousel";
-import CareerSliderCont from "../containers/CareerSliderCont";
+import HeroComp from "../../components/HeroComp";
+import EmployeeBenefits from "../../containers/EmployeeBenefits";
+import BuildSomethingComp from "../../components/BuildSomethingComp";
+import CareerTabsCont from "../../containers/CareerTabsCont";
+import BulletCarousel from "../../components/BulletCarousel";
+import CareerSliderCont from "../../containers/CareerSliderCont";
 export default function Careers() {
     return (
         <>
